@@ -32,3 +32,25 @@ print(1==1.0 and "1"=="1.0" or 5==(3+2))
 print(1==1.0 and not "1"=="1.0" or 5==(3+2))
 
 print(1==1.0 and not "1"=="1.0" and 5==(3+2))
+
+
+Answers to list exercises:
+
+1. Yes. Oddlist become a variable.
+3. Python says the list is 5.
+4. Python says it is a list.
+5. Yes it lists all integers between 0 and 100.
+
+
+Answers to dictionary exercises:
+
+3. The length of about_me is 4. I believe python determines the length of a dictionary by the type. There were 4 different types; int, list, float, and string.
+
+
+Answers to array exercises:
+1. 
+
+
+
+
+
