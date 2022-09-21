@@ -48,7 +48,8 @@ Answers to dictionary exercises:
 
 
 Answers to array exercises:
-1. 
+
+1. In the variable exporer plane the mixnums 
 
 
 
