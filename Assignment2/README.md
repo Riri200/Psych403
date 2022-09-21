@@ -13,3 +13,14 @@ Answers to operation exercises:
 
 Answers to variable exercises:
 
+2. Yes. There are variables in the Variable Editor. 
+4. No. Python does not have a problem with two different variables having the same value.
+5. No. Changing the value of letterX did not change the value of the other variable.
+6. Yes. Changing the value of letter1 changed the value of letterX. This tells me that variables can be reassigned and can be done so multiple times.
+
+
+Answers to boolean exercises:
+
+1. Yes, 1 and 1.0 are equivalent. No, "1" and "1.0" are not equivalent. I think it isn't equivalent because the " " makes it a string so it sees anything within the quotations as a sequence of characters whereas 1 and 1.0 are equivalent because it isn't a string. Rather they are integers when the numbers are without the quotations.  
+2. Yes.
+3. 
