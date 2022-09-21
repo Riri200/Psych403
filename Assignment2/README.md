@@ -24,7 +24,11 @@ Answers to boolean exercises:
 1. Yes, 1 and 1.0 are equivalent. No, "1" and "1.0" are not equivalent. I think it isn't equivalent because the " " makes it a string so it sees anything within the quotations as a sequence of characters whereas 1 and 1.0 are equivalent because it isn't a string. Rather they are integers when the numbers are without the quotations.  
 2. Yes.
 3. print(1==1.0 or "1"=="1.0" or 5==(3+2))
+
 print(1==1.0 or "1"=="1.0" and 5==(3+2))
+
 print(1==1.0 and "1"=="1.0" or 5==(3+2))
+
 print(1==1.0 and not "1"=="1.0" or 5==(3+2))
+
 print(1==1.0 and not "1"=="1.0" and 5==(3+2))
