@@ -36,7 +36,7 @@ print(1==1.0 and not "1"=="1.0" and 5==(3+2))
 
 Answers to list exercises:
 
-1. oddlist=[1,3,5,7,9]  Yes. Oddlist become a variable.
+1. oddlist=[1,3,5,7,9]  Yes. Oddlist became a variable.
 2. print(oddlist)
 3. Python says the list is 5.
 4. Python says it is a list.
