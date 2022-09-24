@@ -55,7 +55,7 @@ Answers to array exercises:
 
 1. All the numbers have a decimal point (is a float) regardless of if it was an integer when I ran the it in the editor or not. 
 2. All the numbers have a quotation (is a string) regardless of if it is was an integer or float when I ran it in the editor or not.
-3. 
+3. oddarray=np.arange(1,100,2)
 
 
 
