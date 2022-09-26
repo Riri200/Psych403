@@ -45,3 +45,24 @@ Answers to zipping exercises:
 
 
 
+Answers to indexing exercises:
+
+1. colours=['red','orange','yellow','green','blue','purple']
+2. print(colours[-2])
+3. print(colours[-2][2])        
+print(colours[-2][-3])
+4. colours[-1]='indigo'        
+colours.append('violet')
+
+
+
+Answers to slicing exercises:
+
+1. list100=list(range(101))
+2. print(list100[:10])
+3. temp=list100[1::2]        
+print(temp[::-1])
+4. temp=list100[-4:]        
+print(temp[::-1])
+5. print(list100[39:44]==[39,40,41,42,43])     
+Yes, they are equal. 
