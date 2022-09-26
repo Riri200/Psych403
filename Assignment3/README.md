@@ -4,15 +4,19 @@ Answers to variable operations exercises:
 2.
 
 #sub 2 
+
 print(sub_code+" "+subnr_str)
 
 #sub 222
+
 print(sub_code+" "+(subnr_str*3))
 
 #sub2sub2sub2
+
 print((sub_code+subnr_str)*3)
 
 #subsubsub222
+
 print(sub_code*3+subnr_str*3) 
 
 
