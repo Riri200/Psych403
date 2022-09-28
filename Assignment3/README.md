@@ -41,7 +41,7 @@ print([[strlist[0],strlist[0]],[strlist[1],strlist[1]],[strlist[2],strlist[2]],[
 
 Answers to zipping exercises:
 
-1. 
+1. catimgs=list(zip(first_item,second_item,cues))
 
 
 
