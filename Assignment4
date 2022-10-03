@@ -30,3 +30,7 @@ else:
 Answers to for loop exercises:
 
 1. 
+myName='Iris'
+
+for letter in myName:
+    print(letter)
