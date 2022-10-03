@@ -1,7 +1,6 @@
 Answers to conditional exercises:
 
 1. 
-
 if response=='1' or response=='2':
     print('OK')
 
