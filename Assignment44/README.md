@@ -1,3 +1,34 @@
 Answers to conditional exercises:
 
 1. 
+if response=='1' or response=='2':
+    print('OK')
+
+elif response=='NaN':
+    print('subject did not respond')
+    
+else:
+    print('subject pressed the wrong key')
+
+2. 
+if response=='1' or response=='2':
+    print('OK')
+    if response=='1':
+        print('Correct!')
+    if response=='2':
+        print('Incorrect!')
+        
+elif response=='NaN':
+    print('subject did not respond')  
+    
+else:
+    print('subject pressed the wrong key')
+
+3. Yes, it does what I expected it to do. 
+
+
+
+
+Answers to for loop exercises:
+
+1. 
