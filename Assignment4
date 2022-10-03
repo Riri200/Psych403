@@ -1,3 +1,14 @@
-Answers to 
+Answers to conditional exercises:
 
 1. 
+
+if response=='1' or response=='2':
+    print('OK')
+
+elif response=='NaN':
+    print('subject did not respond')
+    
+else:
+    print('subject pressed the wrong key')
+
+2. 
