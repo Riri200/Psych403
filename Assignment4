@@ -34,3 +34,14 @@ myName='Iris'
 
 for letter in myName:
     print(letter)
+
+2. 
+myName='Iris'
+
+count=-1
+for letter in myName:
+    count=count+1
+    print(letter)
+    print(count)
+ 
+3. 
