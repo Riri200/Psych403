@@ -1,0 +1,107 @@
+Answers to conditional exercises:
+
+1. 
+if response=='1' or response=='2':
+    print('OK')
+
+elif response=='NaN':
+    print('subject did not respond')
+    
+else:
+    print('subject pressed the wrong key')
+
+2. 
+if response=='1' or response=='2':
+    print('OK')
+    if response=='1':
+        print('Correct!')
+    if response=='2':
+        print('Incorrect!')
+        
+elif response=='NaN':
+    print('subject did not respond')  
+    
+else:
+    print('subject pressed the wrong key')
+
+3. Yes, it does what I expected it to do. 
+
+
+
+Answers to for loop exercises:
+
+1. 
+myName='Iris'
+
+for letter in myName:
+    print(letter)
+
+2. 
+myName='Iris'
+
+count=-1
+for letter in myName:
+    count=count+1
+    print(letter)
+    print(count)
+ 
+3. 
+names=('Amy','Rory','River')
+
+for name in names:
+    print(name)
+    for letter in name:
+        print(letter)
+       
+4.
+names=('Amy','Rory','River')
+
+for name in names:
+    print(name)
+    lettercounter=-1
+    for letter in name:
+        lettercounter=lettercounter+1
+        print(letter)
+        print(lettercounter)
+        
+       
+      
+Answers for while loop exercises:
+
+1. 
+iteration=0
+while iteration<20:
+    if iteration<10:
+        print('%i,image1.png'%iteration)
+    elif iteration<20:
+        print('%i,image2.png'%iteration)
+    iteration=iteration+1
+    
+2. 
+import random
+
+response=''
+looping=True
+while looping:
+    response=random.randint(0,10)
+    print(response)
+    print('imaage')
+    if response==1 or response==2:
+        looping=False 
+        
+3.
+import random
+
+response=''
+looping=True
+failsafe=0
+while looping:
+    response=random.randint(0,10)
+    print(response)
+    print('imaage')
+    failsafe=failsafe+1
+    if failsafe==5:
+        break
+    if response==1 or response==2:
+        looping=False 
+        
