@@ -2,7 +2,7 @@
 
 #-import numpy and/or numpy functions 
 
-    import numpy, random
+    import numpy, random, time
 
 #-number of trials and blocks
 
@@ -16,13 +16,20 @@
        
 #-stimulus names (and stimulus extensions, if images)
 
+    stimulus= ['object1', 'object2','object3', 'object4', 'object5', 'object6','object7','object8','object9','object10']
 
+    if stimulus ==['object1', 'object2','object3', 'object4', 'object5', 'object6','object7','object8','object10']:
+        image = stimulus + '.png'
+
+#-stimulus properties like size, orientation, location, duration
+
+#-start message text
 
 **Answers To Import Exercises:**
 
 #-import numpy and/or numpy functions 
 
-    import numpy, random
+    import numpy, random, time
 
 #-import psychopy functions 
 
