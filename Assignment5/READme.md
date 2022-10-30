@@ -47,6 +47,58 @@
         
 #-create counterbalanced list of all conditions
 
+    stimulus=['object1', 'object2','object3', 'object4', 'object5', 'object6','object7','object8','object9','object10']
+    imgs=['im1.png', 'im2.png', 'im3.png', 'im4.png', 'im5.png','im6.png','im7.png','im8.png','im9.png','im10.png']
+
+    stimulusimgs = list(zip(stimulus,imgs))
+    print(stimulusimgs)
+    
+#-create an empty list for correct responses
+
+    correctresponses=[]
+    correctresponses.append()
+    print(correctresponses)
+
+#-create an empty list for participant responses
+
+    responses=[]
+    responses.append()
+    print(responses)
+
+#-create an empty list for response accuracy collection
+
+    responsesaccuracy=[]
+    responsesaccuracy.append()
+    print(responsesaccuracy)
+
+#-create an empty list for response time collection
+
+    responsetime=[]
+    responsetime.append()
+    print(responsetime)
+
+#-create an empty list for recording the order of stimulus identities
+
+    responseorderidentities=[]
+    responseorderidentities.append()
+    print(responseorderidentities)
+
+#-create an empty list for recording the order of stimulus properties
+
+    responsesproperties=[]
+    responsesproperties.append()
+    print(responsesproperties)
+
+#-for loop for nBlocks
+    
+    for 
+
+#-randomize order of trials here
+
+    np.random.shuffle(trials)
+   
+#-for loop for nTrials
+
 
 **Answers To Import Exercises:**
 
@@ -66,6 +118,24 @@
 
     import os
     
-**Answers To Directory Exercises:**
+**Answers To Directory Exercises:**    
 
-1. 
+#Question 1:     
+  
+    os.listdir(pics)
+     
+#Question 2:
+
+        for pic in pics:
+            if os.path.isdir(directory) == "True"
+            print("cat1.jpg was found")
+            if os.path.isdir(directory) == "False"
+            print("Image does not exist")
+            
+#Question 3:
+
+    experiment_dir = os.path.join(main_dir,'experiment')
+    data_dir = os.path.join(main_dir,'data')
+    image_dir = os.path.join(main_dir,'image)
+    
+    os.path.exists(image)
