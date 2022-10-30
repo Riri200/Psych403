@@ -134,8 +134,13 @@
             
 #Question 3:
 
+    import os
+
     experiment_dir = os.path.join(main_dir,'experiment')
     data_dir = os.path.join(main_dir,'data')
     image_dir = os.path.join(main_dir,'image)
-    
-    os.path.exists(image)
+
+    path = '/Users/irisshi/Desktop/image'
+
+    path = os.path.isfile(path)
+    print(path)
