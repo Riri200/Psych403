@@ -37,8 +37,8 @@
 
 #-start message text
 
-    text_3 = visual.TextStim(win=win, name='text_3',
-        text='start message',
+    textWelcomeMessage = visual.TextStim(win=win, name='textWelcomeMessage',
+        text='Welcome to the experiment!',
         font='Open Sans',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
