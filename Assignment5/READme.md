@@ -91,7 +91,24 @@
 
 #-for loop for nBlocks
     
-    for 
+       block = data.TrialHandler(nReps=2.0, method='random', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=data.importConditions('image_faces.xlsx'),
+        seed=None, name='block')
+    thisExp.addLoop(block)  
+    thisBlock = block.trialList[0] 
+
+    if thisBlock != None:
+        for paramName in thisBlock:
+            exec('{} = thisBlock[paramName]'.format(paramName))
+
+    for thisBlock in block:
+        currentLoop = block
+
+        if thisBlock != None:
+            for paramName in thisBlock:
+                exec('{} = thisBlock[paramName]'.format(paramName))
+
 
 #-randomize order of trials here
 
@@ -99,6 +116,23 @@
    
 #-for loop for nTrials
 
+    face_imagesloop = data.TrialHandler(nReps=1.0, method='random', 
+            extraInfo=expInfo, originPath=-1,
+            trialList=data.importConditions('image_faces.xlsx'),
+            seed=None, name='face_imagesloop')
+        thisExp.addLoop(face_imagesloop)  # add the loop to the experiment
+        thisFace_imagesloop = face_imagesloop.trialList[0]  
+    
+        if thisFace_imagesloop != None:
+            for paramName in thisFace_imagesloop:
+                exec('{} = thisFace_imagesloop[paramName]'.format(paramName))
+
+        for thisFace_imagesloop in face_imagesloop:
+            currentLoop = face_imagesloop
+           
+            if thisFace_imagesloop != None:
+                for paramName in thisFace_imagesloop:
+                    exec('{} = thisFace_imagesloop[paramName]'.format(paramName))
 
 **Answers To Import Exercises:**
 
