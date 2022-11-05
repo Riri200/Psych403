@@ -30,13 +30,13 @@
 #-stimulus properties like size, orientation, location, duration
 
     image1 = visual.ImageStim(
-        win=win,
-        name='image1', units='pix', 
-        image=None, mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), size=(200, 200),
-        color=[1,1,1], colorSpace='rgb', opacity=None,
-        flipHoriz=False, flipVert=False,
-        texRes=128.0, interpolate=True, depth=0.0)
+    win=win,
+    name='image1', 
+    image='image/face01.jpg', mask=None, anchor='center',
+    ori=0.0, pos=(0, 0), size=(0.5, 0.5),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=128.0, interpolate=True, depth=0.0)
 
 #-start message text
 
