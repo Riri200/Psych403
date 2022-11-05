@@ -98,3 +98,30 @@ Colorspace allows you to insert color by name but do not include any spaces. The
 **Answers to Stimulus Exercises**
 
 1. 
+
+        from psychopy import visual, monitors, event
+
+        mon = monitors.Monitor('myMonitor', width=30, distance=57)
+        mon.setSizePix([1024,768])
+        win = visual.Window(monitor=mon) 
+
+        import os
+        os.chdir('/Applications')
+        main_dir = os.getcwd() 
+        image_dir = os.path.join(main_dir,'image')
+
+        import numpy as np 
+        stims = ['face01.jpg','face02.jpg','face03.jpg'] 
+        nTrials=3 
+        my_image = visual.ImageStim(win,units="pix",size=(400,400))
+
+        for trial in range(nTrials): 
+            my_image.image = os.path.join(image_dir,stims[trial])
+
+            my_image.draw() 
+            win.flip() 
+            event.waitKeys() 
+
+        win.close()
+
+2. 
