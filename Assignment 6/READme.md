@@ -76,8 +76,10 @@ Some units will require monitor information whereas some will not. It defines th
 From Builder you can use the color picker to choose the color you want and find out the value that color would correspond to in a variety of spaces. Psychopy uses three color spaces; RGB, DKL and LMS. Colors can also be specified by a name or by a hexadecimal string.
 Colorspace allows you to insert color by name but do not include any spaces. These color names are then converted into RGB space by PsychoPy.
 
-3.  
+3. 
      
+         
+ 
         from psychopy import visual, monitors
         mon = monitors.Monitor('myMonitor', width=30, distance=57)
         mon.setSizePix([1024,768])
