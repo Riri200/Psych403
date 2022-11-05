@@ -43,7 +43,16 @@
             title='Subject Info',fixed='session',
             order=['session', 'subject_nr', 'age', 'gender', 'handedness'])
             
-4. 
+*4. 
+
+        from psychopy import gui
+
+        exp_info = {'session':1,'subject_nr':0, 'age':0, 'handedness':('right','left','ambi'), 
+                    'gender':()}
+        dictDlg = gui.DlgFromDict(dictionary=exp_info,
+                show=False,  #Not sure what to do after putting False...!
+                title='Subject Info',fixed='session',
+                order=['session', 'subject_nr', 'age', 'gender', 'handedness'])
 
 5.
 
