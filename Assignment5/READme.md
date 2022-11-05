@@ -9,6 +9,9 @@
 
 #-number of trials and blocks
 
+    trial=10
+    block=2
+
     trial=range(1,11)
     block=range(1,11)
 
