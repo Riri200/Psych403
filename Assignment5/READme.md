@@ -41,68 +41,39 @@
         
 #-create counterbalanced list of all conditions
 
-    stimulus= ['face01.jpg', 'face02.pjg','face03.jpg', 'face04.jpg', 'face05.jpg', 'face06.jpg','face07.jpg','face08.jpg','face09.jpg','face10.jpg']
-    imgs=['im1.png', 'im2.png', 'im3.png', 'im4.png', 'im5.png','im6.png','im7.png','im8.png','im9.png','im10.png']
+    stimulus= ['face01.jpg', 'face02.pjg','face03.jpg', 'face04.jpg', 'face05.jpg', 'face06.jpg','face07.jpg','face08.jpg','face09.jpg','face10.jpg']*2
+    blocks=['block1']*10 + ['block2']*10
 
-    stimulusimgs = list(zip(stimulus,imgs))
-    print(stimulusimgs)
+    stimulusBlocks = list(zip(blocks,stimulus))
+    print(stimulusBlocks)
     
 #-create an empty list for correct responses
 
     correctresponses=[]
-    correctresponses.append()
-    print(correctresponses)
 
 #-create an empty list for participant responses
 
     responses=[]
-    responses.append()
-    print(responses)
 
 #-create an empty list for response accuracy collection
 
     responsesaccuracy=[]
-    responsesaccuracy.append()
-    print(responsesaccuracy)
 
 #-create an empty list for response time collection
 
     responsetime=[]
-    responsetime.append()
-    print(responsetime)
 
 #-create an empty list for recording the order of stimulus identities
 
     responseorderidentities=[]
-    responseorderidentities.append()
-    print(responseorderidentities)
 
 #-create an empty list for recording the order of stimulus properties
 
     responsesproperties=[]
-    responsesproperties.append()
-    print(responsesproperties)
 
 #-for loop for nBlocks
     
-       block = data.TrialHandler(nReps=2.0, method='random', 
-        extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('image_faces.xlsx'),
-        seed=None, name='block')
-    thisExp.addLoop(block)  
-    thisBlock = block.trialList[0] 
-
-    if thisBlock != None:
-        for paramName in thisBlock:
-            exec('{} = thisBlock[paramName]'.format(paramName))
-
-    for thisBlock in block:
-        currentLoop = block
-
-        if thisBlock != None:
-            for paramName in thisBlock:
-                exec('{} = thisBlock[paramName]'.format(paramName))
-
+       for block in range(nBlocks)
 
 #-randomize order of trials here
 
@@ -110,23 +81,7 @@
    
 #-for loop for nTrials
 
-    face_imagesloop = data.TrialHandler(nReps=1.0, method='random', 
-            extraInfo=expInfo, originPath=-1,
-            trialList=data.importConditions('image_faces.xlsx'),
-            seed=None, name='face_imagesloop')
-        thisExp.addLoop(face_imagesloop)  # add the loop to the experiment
-        thisFace_imagesloop = face_imagesloop.trialList[0]  
-    
-        if thisFace_imagesloop != None:
-            for paramName in thisFace_imagesloop:
-                exec('{} = thisFace_imagesloop[paramName]'.format(paramName))
-
-        for thisFace_imagesloop in face_imagesloop:
-            currentLoop = face_imagesloop
-           
-            if thisFace_imagesloop != None:
-                for paramName in thisFace_imagesloop:
-                    exec('{} = thisFace_imagesloop[paramName]'.format(paramName))
+    for trial in range(nTrials)
 
 **Answers To Import Exercises:**
 
