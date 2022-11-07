@@ -14,10 +14,7 @@
        
 #-stimulus names (and stimulus extensions, if images)
 
-    stimulus= ['object1', 'object2','object3', 'object4', 'object5', 'object6','object7','object8','object9','object10']
-
-    if stimulus ==['object1', 'object2','object3', 'object4', 'object5', 'object6','object7','object8','object10']:
-        image = stimulus + '.png'
+    stimulus= ['face01.jpg', 'face02.pjg','face03.jpg', 'face04.jpg', 'face05.jpg', 'face06.jpg','face07.jpg','face08.jpg','face09.jpg','face10.jpg']
 
 #-stimulus properties like size, orientation, location, duration
 
