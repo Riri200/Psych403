@@ -106,7 +106,7 @@
 
 #-randomize order of trials here
 
-    np.random.shuffle(trials)
+    np.random.shuffle(nTrials)
    
 #-for loop for nTrials
 
