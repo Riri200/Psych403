@@ -9,16 +9,8 @@
 
 #-number of trials and blocks
 
-    trial=10
-    block=2
-
-    trial=range(1,11)
-    block=range(1,11)
-
-    for trial in trial:
-        print("Block 1, Trial number", trial)
-    for block in block:
-        print("Block 2, Trial number", block)
+    nTrial=10
+    nBlock=2
        
 #-stimulus names (and stimulus extensions, if images)
 
