@@ -41,7 +41,7 @@
         
 #-create counterbalanced list of all conditions
 
-    stimulus=['object1', 'object2','object3', 'object4', 'object5', 'object6','object7','object8','object9','object10']
+    stimulus= ['face01.jpg', 'face02.pjg','face03.jpg', 'face04.jpg', 'face05.jpg', 'face06.jpg','face07.jpg','face08.jpg','face09.jpg','face10.jpg']
     imgs=['im1.png', 'im2.png', 'im3.png', 'im4.png', 'im5.png','im6.png','im7.png','im8.png','im9.png','im10.png']
 
     stimulusimgs = list(zip(stimulus,imgs))
