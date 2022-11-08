@@ -105,6 +105,7 @@
 
 #Question 1:     
   
+    import os
     os.listdir(pics)
      
 #Question 2:
