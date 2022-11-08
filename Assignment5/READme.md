@@ -3,12 +3,10 @@
 #-import numpy and/or numpy functions 
 
     import numpy as np 
-    from numpy import (sin, cos, tan, log, log10, pi, average,
-                        sqrt, std, deg2rad, rad2deg, linspace, asarray)
-    from numpy.random import random, randint, normal, shuffle, choice as randchoice
+    import random
+    from psychopy import core, gui, visual, event 
+    import os
     
-    import numpy, random, time
-
 #-number of trials and blocks
 
     nTrial=10
@@ -16,7 +14,7 @@
        
 #-stimulus names (and stimulus extensions, if images)
 
-    stimulus= ['face01.jpg', 'face02.pjg','face03.jpg', 'face04.jpg', 'face05.jpg', 'face06.jpg','face07.jpg','face08.jpg','face09.jpg','face10.jpg']
+    stimulus = ['face01.jpg', 'face02.pjg','face03.jpg', 'face04.jpg', 'face05.jpg', 'face06.jpg','face07.jpg','face08.jpg','face09.jpg','face10.jpg']
 
 #-stimulus properties like size, orientation, location, duration
 
