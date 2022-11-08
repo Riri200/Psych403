@@ -106,6 +106,7 @@
 #Question 1:     
   
     import os
+    image_dir = os.path.join(main_dir,'images')
     os.listdir(pics)
      
 #Question 2:
