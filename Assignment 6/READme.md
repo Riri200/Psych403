@@ -125,3 +125,59 @@ Colorspace allows you to insert color by name but do not include any spaces. The
         win.close()
 
 2. 
+3. 
+4.
+
+        #=====================
+        #CREATION OF WINDOW AND STIMULI
+        #=====================
+        #-define experiment start text unsing psychopy functions
+        start_msg = "Welcome to my experiment!"
+        #-define block (start)/end text using psychopy functions
+        block_msg = "Press any key to continue to the next block."
+        end_trial_msg = "End of trial"
+        #-define stimuli using psychopy functions (images, fixation cross)
+        stims = ['face01.jpg','face02.jpg','face03.jpg']
+        fixationCross = visual.TextStim(win,text='+')
+        #=====================
+        #START EXPERIMENT
+        #=====================
+        #-present start message text
+        start_msg = "Welcome to my experiment!"
+        my_text = visual.TextStim(win, text=start_msg)
+        #-allow participant to begin experiment with button press
+        my_text = visual.TextStim(win, text=block_msg)
+        event.waitKeys()
+        #=====================
+        #BLOCK SEQUENCE
+        #=====================
+        #-for loop for nBlocks
+            #-present block start message
+            #-randomize order of trials here
+
+            #=====================
+            #TRIAL SEQUENCE
+            #=====================    
+            #-for loop for nTrials
+                #-set stimuli and stimulus properties for the current trial
+
+                #=====================
+                #START TRIAL
+                #=====================  
+                #-draw fixation
+                #-flip window
+                #-wait time (stimulus duration)
+
+                #-draw image
+                #-flip window
+                #-wait time (stimulus duration)
+
+                #-draw end trial text
+                #-flip window
+                #-wait time (stimulus duration)
+
+        #======================
+        # END OF EXPERIMENT
+        #======================        
+        #-close window
+        win.close()
