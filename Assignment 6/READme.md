@@ -125,7 +125,8 @@ Colorspace allows you to insert color by name but do not include any spaces. The
         win.close()
 
 2. 
-3. 
+3.
+        fixationCross = visual.TextStim(win,text='+')
 4.
 
         #=====================
