@@ -153,9 +153,11 @@ Colorspace allows you to insert color by name but do not include any spaces. The
         #BLOCK SEQUENCE
         #=====================
         #-for loop for nBlocks
+        for block in range(nBlocks):
             #-present block start message
+            
             #-randomize order of trials here
-
+            np.random.shuffle(trials)
             #=====================
             #TRIAL SEQUENCE
             #=====================    
