@@ -126,7 +126,8 @@ Colorspace allows you to insert color by name but do not include any spaces. The
 
 2. 
 3.
-        fixationCross = visual.TextStim(win,text='+')
+        fix = visual.TextStim(win,text='+')
+        fix_text.draw()
 4.
 
         #=====================
@@ -139,7 +140,7 @@ Colorspace allows you to insert color by name but do not include any spaces. The
         end_trial_msg = "End of trial"
         #-define stimuli using psychopy functions (images, fixation cross)
         stims = ['face01.jpg','face02.jpg','face03.jpg']
-        fixationCross = visual.TextStim(win,text='+')
+        fix = visual.TextStim(win,text='+')
         #=====================
         #START EXPERIMENT
         #=====================
@@ -155,30 +156,43 @@ Colorspace allows you to insert color by name but do not include any spaces. The
         #-for loop for nBlocks
         for block in range(nBlocks):
             #-present block start message
-            
+            visual.TextStim(win, text=block_msg)
             #-randomize order of trials here
+            import numpy as np
             np.random.shuffle(trials)
             #=====================
             #TRIAL SEQUENCE
             #=====================    
             #-for loop for nTrials
+            for trial in range(nTrials):
                 #-set stimuli and stimulus properties for the current trial
+                my_image = visual.ImageStim(win,units="pix",size=(400,400))
 
                 #=====================
                 #START TRIAL
                 #=====================  
                 #-draw fixation
+                fix_text.draw()
                 #-flip window
+                win.flip()
                 #-wait time (stimulus duration)
+                core.wait(3)
 
                 #-draw image
+                pic_loc = os.path.join(image_dir,'face01.jpg')
+                my_image = visual.ImageStim(win, image=pic_loc)
+                my_image.draw()
                 #-flip window
+                win.flip()
                 #-wait time (stimulus duration)
+                core.wait(3)
 
                 #-draw end trial text
+                end_trial_text.draw()
                 #-flip window
+                win.flip()
                 #-wait time (stimulus duration)
-
+                core.wait(3)
         #======================
         # END OF EXPERIMENT
         #======================        
