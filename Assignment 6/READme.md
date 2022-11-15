@@ -125,9 +125,46 @@ Colorspace allows you to insert color by name but do not include any spaces. The
         win.close()
 
 2. 
+
+        from psychopy import visual, monitors, event
+
+        mon = monitors.Monitor('myMonitor', width=30, distance=57)
+        mon.setSizePix([1200,1200])
+        win = visual.Window(monitor=mon) 
+
+        import os
+        os.chdir('/Applications')
+        main_dir = os.getcwd() 
+        image_dir = os.path.join(main_dir,'image')
+
+        face01 = visual.ImageStim(win, units='pix',image='/Applications/image/face01.jpg',pos=(200,100), size=(400,400))
+        face02 = visual.ImageStim(win,units='pix',image='/Applications/image/face02.jpg',pos=(-200,100), size=(400,400))
+        face03 = visual.ImageStim(win, units='pix',image='/Applications/image/face03.jpg',pos=(-200,-100), size=(400,400))
+        face04 = visual.ImageStim(win, units='pix',image='/Applications/image/face04.jpg',pos=(200,-100), size=(400,400))
+
+
+        face01.draw()
+        win.flip() 
+        event.waitKeys() 
+
+        face02.draw()
+        win.flip() 
+        event.waitKeys() 
+
+        face03.draw()
+        win.flip() 
+        event.waitKeys() 
+
+        face04.draw()
+        win.flip() 
+        event.waitKeys() 
+
+        win.close()
+               
 3.
-        fix = visual.TextStim(win,text='+')
-        fix_text.draw()
+
+            fix = visual.TextStim(win,text='+')
+            fix_text.draw()
 4.
 
         #=====================
