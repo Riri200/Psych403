@@ -187,3 +187,117 @@ Stimuli were presented roughly 1.999 seconds. This was more precise than clock_w
 **Answers to Frame-based Timing Excercises**   
 
 1. 
+
+            from psychopy import visual, monitors, event, core
+
+            mon = monitors.Monitor('myMonitor', width=30, distance=57)
+            mon.setSizePix([1024,768])
+            win = visual.Window(monitor=mon) 
+
+            import os
+            os.chdir('/Applications')
+            main_dir = os.getcwd() 
+            image_dir = os.path.join(main_dir,'image')
+
+            refresh=1.0/60.0
+
+            fix_dur = 0.2 
+            image_dur = 0.1 
+            text_dur = 0.2 
+
+            fix_frames = int(fix_dur / refresh) #whole number
+            image_frames = int(image_dur / refresh) #whole number
+            text_frames = int(text_dur / refresh) #whole number
+            total_frames = int(fix_frames + image_frames + text_frames)
+
+            import numpy as np 
+            stims = ['face01.jpg','face02.jpg','face03.jpg'] 
+            nTrials=3 
+            nBlocks=2
+            my_image = visual.ImageStim(win,units="pix",size=(400,400))
+
+            trial_timer = core.Clock() 
+            block_timer = core.Clock()
+
+            for frameN in range(total_frames):
+                if 0 <= frameN <= fix_frames:
+                    win.flip()
+
+                    if frameN == fix_frames:
+                        print("End fix frame =", frameN)
+
+                if fix_frames < frameN <= (fix_frames+image_frames):
+                    win.flip()
+
+                    if frameN == (fix_frames+image_frames):
+                        print("End image frame =", frameN)
+
+                if (fix_frames+image_frames) < frameN < total_frames:
+                    win.flip()
+
+                    if frameN == (total_frames-1):
+                        print("End text frame =", frameN)
+
+            win.close()
+            
+
+2. 
+
+            from psychopy import visual, monitors, event, core, logging
+
+            mon = monitors.Monitor('myMonitor', width=30, distance=57)
+            mon.setSizePix([1024,768])
+            win = visual.Window(monitor=mon) 
+
+            import os
+            os.chdir('/Applications')
+            main_dir = os.getcwd() 
+            image_dir = os.path.join(main_dir,'image')
+
+            refresh=1.0/60.0
+
+            fix_dur = 0.2 
+            image_dur = 0.1 
+            text_dur = 0.2 
+
+            fix_frames = int(fix_dur / refresh) #whole number
+            image_frames = int(image_dur / refresh) #whole number
+            text_frames = int(text_dur / refresh) #whole number
+            total_frames = int(fix_frames + image_frames + text_frames)
+
+            import numpy as np 
+            stims = ['face01.jpg','face02.jpg','face03.jpg'] 
+            nTrials=3 
+            nBlocks=2
+            win.recordFrameIntervals = True
+            win.refreshThreshold = 1.0/60.0 + 0.004
+            logging.console.setLevel(logging.WARNING)
+
+            my_image = visual.ImageStim(win,units="pix",size=(400,400))
+
+            trial_timer = core.Clock() 
+            block_timer = core.Clock()
+
+            for frameN in range(total_frames):
+                if 0 <= frameN <= fix_frames:
+                    win.flip()
+
+                    if frameN == fix_frames:
+                        print("End fix frame =", frameN)
+
+                if fix_frames < frameN <= (fix_frames+image_frames):
+                    win.flip()
+
+                    if frameN == (fix_frames+image_frames):
+                        print("End image frame =", frameN)
+
+                if (fix_frames+image_frames) < frameN < total_frames:
+                    win.flip()
+
+                    if frameN == (total_frames-1):
+                        print("End text frame =", frameN)
+            print('Overall, %i frames were dropped.' % win.nDroppedFrames)
+
+            win.close()
+            
+Overall, 0 frames were dropped.            
