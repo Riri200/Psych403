@@ -9,21 +9,22 @@
             #-flip window
             win.flip() 
             #-wait time (stimulus duration)
-            core.wait()
+            core.wait(2)
 
             #-draw image
+            my_image = visual.ImageStim(win,units="pix",size=(400,400))
             my_image.draw()
             #-flip window
             win.flip() 
             #-wait time (stimulus duration)
-            core.wait()
+            core.wait(2)
 
             #-draw end trial text
             end_trial_text.draw()
             #-flip window
             win.flip()
             #-wait time (stimulus duration)
-            core.wait()
+            core.wait(2)
 
 **Clock Excercises Answers**
 
