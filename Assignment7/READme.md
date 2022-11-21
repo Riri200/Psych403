@@ -20,6 +20,7 @@
             core.wait(2)
 
             #-draw end trial text
+            end_trial_text = "End of trial"
             end_trial_text.draw()
             #-flip window
             win.flip()
